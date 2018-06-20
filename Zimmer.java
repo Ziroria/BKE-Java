@@ -6,62 +6,49 @@ import java.util.ArrayList;
  * @author (Memo Kocgazi) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Zimmer
-{
+public class Zimmer{
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int anzahlBetten;
     private double preis;
     private ArrayList<Person> personen;
 
-    public Zimmer(int anzahlBetten, double preis)
-    {
+    public Zimmer(int anzahlBetten, double preis){
         this.anzahlBetten = anzahlBetten;
         this.preis = preis;
         personen = new ArrayList<Person>();
     }
 
-    public int gibAnzahlBetten()
-    {
+    public int gibAnzahlBetten(){
         return anzahlBetten;
     }
 
-    public double gibPreis()
-    {
+    public double gibPreis(){
         return preis;
     }
 
-    public void setzePreis (int neuPreis)
-    {
+    public void setzePreis (int neuPreis){
         preis = neuPreis; 
     }
 
-    public void personHinzufügen(Person personX)
-    {
-        if(anzahlBetten > personen.size())
-        {
+    public void personHinzufügen(Person personX){
+        if(anzahlBetten > personen.size()){
             personen.add(personX);
-        }
-        else
-        {
+        }else{
             System.out.println("Das Zimmer ist Belegt");
         }
     }
     
-    public int anzahlPersonen()
-    {
+    public int anzahlPersonen(){
         return personen.size();
     }
 
-    public void personEntfernen(Person personX)
-    {
+    public void personEntfernen(Person personX){
         personen.remove(personX);
     }
 
-    public void personenEntfernen(String beschreibung)
-    {
+    public void personenEntfernen(String beschreibung){
         
-        for(Person person : personen)
-        {
+        for(Person person : personen){
             personen.remove(beschreibung);
         }
     }

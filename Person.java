@@ -2,28 +2,23 @@
 /**
  * Beschreiben Sie hier die Klasse Person.
  * 
- * @author (memo) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @authors Yami, Ziroria
+ * @version 20.06.2018
  */
-public class Person
-{
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+public class Person{
     private int alter;
     private String name;
 
-    public Person(String nName, int nAlter)
-    {
-        name = nName;
-        alter = nAlter;
+    public Person(String newName, int newAlter){
+        name = newName;
+        alter = newAlter;
     }
         
-    public String gibName()
-    {
+    public String gibName(){
         return name;
     }
     
-    public int gibAlter()
-    {
+    public int gibAlter(){
         return alter;
     }
 }
